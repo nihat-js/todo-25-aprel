@@ -1,0 +1,63 @@
+
+
+.app-page {
+  min-height: 100vh;
+  // background-color: #f5f7f9;
+  background-color: #2E4057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .list {
+    max-width: 600px;
+    padding: 40px 30px;
+    background-color: #048ba8;
+    border-radius: 6px;
+    height: 600px;
+    overflow-y: auto;
+    &>.title {
+      font-size: 40px;
+
+      margin-bottom: 15px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: default;
+
+      .status {
+        padding: 4px;
+        border-radius: 50%;
+
+        &:hover {
+          background: tan;
+
+        }
+      }
+
+      &:hover {
+        background-color: #dedede;
+      }
+
+      .title {
+        flex: 1;
+        &:hover {
+          // background-color: hsl(0, 0%, 57%);
+          cursor: pointer;
+          // padding: 4px 6px ;
+        }
+      }
+
+      .user {
+        padding: 4px 6px;
+        background-color: #d6d6d6;
+        border-radius: 4px;
+      }
+    }
+  }
+
+}
